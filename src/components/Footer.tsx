@@ -37,13 +37,17 @@ export function Footer() {
             </p>
             <div className="flex space-x-4">
               <a
-                href="#"
+                href="https://www.linkedin.com/company/canadia-group/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 bg-white/10 flex items-center justify-center rounded hover:bg-[#D4AF37] transition-colors duration-200"
               >
                 <Linkedin size={20} />
               </a>
               <a
-                href="#"
+                href="https://www.facebook.com/canadiagroup"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-10 h-10 bg-white/10 flex items-center justify-center rounded hover:bg-[#D4AF37] transition-colors duration-200"
               >
                 <Facebook size={20} />
