@@ -13,6 +13,9 @@ import DaraHotel from './assets/Dara_Hotel.avif';
 import KohNoreaBridge from './assets/Koh_Norea_Bridge.jpg';
 import CNDTower from './assets/cnd_tower.jpg';
 import CHM from './assets/chairman.jpg';
+import NIS from './assets/NIS_Ceremony.jpg';
+import CamTech from './assets/CamTech_Graduation_2025.jpg';
+import TIA from './assets/Techo_International_Airport_Official_Inauguration.jpg';
 
 export default function App() {
   const projects = [
@@ -52,9 +55,9 @@ export default function App() {
       />
       <News 
         newsImages={{
-          education: "https://images.unsplash.com/photo-1664273891579-22f28332f3c4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx1bml2ZXJzaXR5JTIwY2FtcHVzJTIwbW9kZXJuJTIwYnVpbGRpbmd8ZW58MXx8fHwxNzcwODYyNDQwfDA&ixlib=rb-4.1.0&q=80&w=1080",
-          infrastructure: "https://images.unsplash.com/photo-1759453072569-4f21d4e96493?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBjb25zdHJ1Y3Rpb24lMjBpbmZyYXN0cnVjdHVyZXxlbnwxfHx8fDE3NzA4NzA4MDF8MA&ixlib=rb-4.1.0&q=80&w=1080",
-          airport: "https://images.unsplash.com/photo-1758669246636-17a5f6d972ec?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBhaXJwb3J0JTIwdGVybWluYWwlMjBhcmNoaXRlY3R1cmV8ZW58MXx8fHwxNzcwODcwODAwfDA&ixlib=rb-4.1.0&q=80&w=1080"
+          education: NIS,
+          infrastructure: CamTech,
+          airport: TIA
         }}
       />
       <CTA />

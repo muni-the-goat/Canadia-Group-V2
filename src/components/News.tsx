@@ -16,19 +16,19 @@ export function News({ newsImages }: NewsProps) {
   const newsItems = [
     {
       image: newsImages.airport,
-      title: 'Canadia Group Expands Aviation Infrastructure Portfolio',
+      title: 'Prime Minister Hun Manet Inaugurates New Airport, Marking a Major Milestone in Cambodia’s Infrastructure Development',
       date: 'February 10, 2026',
       excerpt: 'Strategic investment in new regional airports to enhance connectivity across Southeast Asia.',
     },
     {
       image: newsImages.infrastructure,
-      title: 'Sustainable Development Initiative Launched',
+      title: 'CamTech University Holds First Graduation Ceremony',
       date: 'February 5, 2026',
-      excerpt: 'New $500M commitment to green infrastructure and renewable energy projects across Cambodia.',
+      excerpt: 'Held on 17 December, CamTech University’s first graduation ceremony celebrated its inaugural graduates across PhD, Master’s, and Bachelor’s programs, attended by senior government officials and private-sector leaders.',
     },
     {
       image: newsImages.education,
-      title: 'Education Expansion Program Announced',
+      title: 'OCIC Launches Norea International School, Opening Phases Announced during the Ground Breaking Ceremony',
       date: 'January 28, 2026',
       excerpt: 'Partnership with international institutions to establish new schools and training centers.',
     },

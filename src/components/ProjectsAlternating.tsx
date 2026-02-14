@@ -17,12 +17,10 @@ export function ProjectsAlternating({ projects }: ProjectsAlternatingProps) {
   return (
     <section id="projects" className="bg-white px-[0px] py-[32px]">
       <div className="max-w-[1200px] mx-auto px-6 lg:px-20">
-        <div className="text-center mx-[0px] my-[64px] px-[0px] py-[32px]">
+        <div className="text-center p-[0px] mx-[0px] my-[32px]">
           <div className="w-16 h-1 bg-[#D4AF37] mx-auto mb-6" />
-          <h2 className="text-[#0B1C2D] mb-4">
-            Featured Projects
-          </h2>
-          <p className="text-[#666666] max-w-2xl mx-auto px-[0px] py-[18px] mx-[0px] my-[12px] text-left">
+          <h2 className="text-[#0B1C2D] mb-4">Featured Projects</h2>
+          <p className="text-[#666666] max-w-2xl mx-auto text-left mx-[0px] my-[24px] px-[0px] py-[24px]">
             Landmark developments that define Cambodia's modern landscape
           </p>
         </div>
@@ -37,7 +35,7 @@ export function ProjectsAlternating({ projects }: ProjectsAlternatingProps) {
                 initial={{ opacity: 0, y: 30 }}
                 animate={isInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.8, delay: index * 0.2 }}
-                className={`grid md:grid-cols-2 gap-20 items-center ${ !isEven ? 'md:flex-row-reverse' : '' } mx-[0px] mt-[0px] mb-[64px]`}
+                className={`grid md:grid-cols-2 gap-20 items-center ${ !isEven ? 'md:flex-row-reverse' : '' } mx-[0px] mt-[0px] mb-[32px]`}
               >
                 {/* Image */}
                 <div className={`${!isEven ? 'md:order-2' : ''}`}>
