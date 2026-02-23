@@ -29,13 +29,13 @@ export function Sustainability({ sustainabilityImage }: SustainabilityProps) {
 
   return (
     <section id="sustainability" className="bg-white px-[0px] py-[64px]">
-      <div className="max-w-[1200px] mx-auto px-6 lg:px-20">
+      <div className="max-w-[1440px] mx-auto px-6 lg:px-20">
         <div className="text-center mx-[0px] mt-[0px] mb-[32px]">
           <div className="w-16 h-1 bg-[#D4AF37] mx-auto mb-6" />
           <h2 className="text-[#0B1C2D] mb-4">
             Sustainability & ESG
           </h2>
-          <p className="text-[#666666] max-w-2xl mx-auto text-left m-[0px] px-[0px] py-[24px]">
+          <p className="text-[#666666] mx-auto text-center m-[0px] px-[0px] py-[24px]">
             Building a sustainable future through responsible corporate practices
           </p>
         </div>

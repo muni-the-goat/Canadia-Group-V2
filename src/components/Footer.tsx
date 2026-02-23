@@ -23,7 +23,7 @@ export function Footer() {
 
   return (
     <footer id="contact" className="bg-[#0B1C2D] text-white">
-      <div className="max-w-[1200px] mx-auto px-6 lg:px-20 py-20">
+      <div className="max-w-[1440px] mx-auto px-6 lg:px-20 py-20">
         <div className="grid md:grid-cols-4 gap-12 mb-12">
           {/* Company Info */}
           <div>

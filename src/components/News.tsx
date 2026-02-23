@@ -12,6 +12,7 @@ interface NewsProps {
 
 export function News({ newsImages }: NewsProps) {
   const [ref, isInView] = useInView({ threshold: 0.1 });
+  const [headerRef, isHeaderInView] = useInView({ threshold: 0.1 });
 
   const newsItems = [
     {
@@ -36,16 +37,22 @@ export function News({ newsImages }: NewsProps) {
 
   return (
     <section id="news" className="bg-[#F5F5F5] px-[0px] py-[64px] m-[0px]">
-      <div className="max-w-[1200px] mx-auto px-6 lg:px-20">
-        <div className="text-center mb-16">
+      <div className="max-w-[1440px] mx-auto px-6 lg:px-20">
+        <motion.div
+          ref={headerRef}
+          initial={{ opacity: 0, y: 16 }}
+          animate={isHeaderInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.6 }}
+          className="text-center mb-16"
+        >
           <div className="w-16 h-1 bg-[#D4AF37] mx-auto mx-[488px] mt-[0px] mb-[12px]" />
           <h2 className="text-[#0B1C2D] mb-4 px-[0px] py-[24px]">
             News & Updates
           </h2>
-          <p className="text-[#666666] max-w-2xl mx-auto px-[0px] py-[12px]">
+          <p className="text-[#666666] mx-auto text-center">
             Latest developments and announcements from Canadia Group
           </p>
-        </div>
+        </motion.div>
 
         <div ref={ref} className="grid md:grid-cols-3 gap-8 p-[0px] m-[0px]">
           {newsItems.map((item, index) => (
@@ -54,13 +61,17 @@ export function News({ newsImages }: NewsProps) {
               initial={{ opacity: 0, y: 30 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: index * 0.1 }}
+              whileHover={{ y: -6 }}
               className="group cursor-pointer bg-white rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300 px-[32px] py-[0px]"
             >
               <div className="overflow-hidden mb-6 rounded-lg">
-                <img
+                <motion.img
                   src={item.image}
                   alt={item.title}
                   className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
+                  initial={false}
+                  whileHover={{ scale: 1.06 }}
+                  transition={{ duration: 0.5 }}
                 />
               </div>
               <div className="flex items-center text-sm text-[#666666] mb-3">
@@ -78,9 +89,13 @@ export function News({ newsImages }: NewsProps) {
         </div>
 
         <div className="text-center mt-12">
-          <button className="border-2 border-[#0B1C2D] text-[#0B1C2D] px-8 py-3 h-12 rounded-lg hover:bg-[#0B1C2D] hover:text-white transition-all duration-200 font-medium tracking-wide">
+          <motion.button
+            whileHover={{ scale: 1.03 }}
+            whileTap={{ scale: 0.98 }}
+            className="border-2 border-[#0B1C2D] text-[#0B1C2D] px-8 py-3 h-12 rounded-lg hover:bg-[#0B1C2D] hover:text-white transition-all duration-200 font-medium tracking-wide"
+          >
             View All News
-          </button>
+          </motion.button>
         </div>
       </div>
     </section>

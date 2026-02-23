@@ -12,10 +12,15 @@ import TIANightTime from './assets/TIA_Night_time.jpg';
 import DaraHotel from './assets/Dara_Hotel.avif';
 import KohNoreaBridge from './assets/Koh_Norea_Bridge.jpg';
 import CNDTower from './assets/cnd_tower.jpg';
+import CNDTower2 from './assets/CND_Tower2.jpg';
 import CHM from './assets/chairman.jpg';
 import NIS from './assets/NIS_Ceremony.jpg';
 import CamTech from './assets/CamTech_Graduation_2025.jpg';
 import TIA from './assets/Techo_International_Airport_Official_Inauguration.jpg';
+import KohPichEliteTown from './assets/koh-pich-elite-town.jpeg';
+import IndependenceHotel from './assets/independence-hotel.jpg';
+import CIS from './assets/CIS.jpg';
+import Airport from './assets/Airport.jpg';
 
 export default function App() {
   const projects = [
@@ -36,6 +41,15 @@ export default function App() {
     }
   ];
 
+  const pillarImages = {
+    banking: CNDTower2,
+    realEstate: KohPichEliteTown,
+    airports: Airport,
+    education: CIS,
+    hospitality: IndependenceHotel,
+    investment: KohNoreaBridge,
+  };
+
   return (
     <div className="min-h-screen">
       <Navbar />
@@ -45,7 +59,7 @@ export default function App() {
       <About 
         aboutImage={CNDTower}
       />
-      <BusinessPillars />
+      <BusinessPillars images={pillarImages} />
       <ProjectsAlternating projects={projects} />
       <Sustainability 
         sustainabilityImage="https://images.unsplash.com/photo-1692118459258-0b90b2b691fa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzdXN0YWluYWJsZSUyMGdyZWVuJTIwYnVpbGRpbmclMjBhcmNoaXRlY3R1cmV8ZW58MXx8fHwxNzcwODcwODAyfDA&ixlib=rb-4.1.0&q=80&w=1080"
